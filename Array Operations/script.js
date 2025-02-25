@@ -6,21 +6,22 @@ colors[2]="orange";
 console.log(colors[2])
 //2. Traversing an Array
 let numbers = [10, 20, 30, 40, 50];
-for(var i = 0 ; i<numbers.length;i++)
+var n = numbers.length
+for(var i = 0 ; i<n;i++)
     console.log(numbers[i])
-for(var i = numbers.length-1 ; i >=0 ; i--)
+for(var i = n-1 ; i >=0 ; i--)
     console.log(numbers[i])
 //3. Searching in an Array
 let numbers2 = [5, 10, 15, 20, 25];
-var test = numbers2.includes(25);
-if(test)
+var isExsist = numbers2.includes(25);
+if(isExsist)
     console.log("Found at position: "+numbers2.indexOf(25))
 else
     console.log("Not Found")
 //4. Sorting an Array
 
-let scores = [50, 20, 70, 10, 40];
-scores.sort();
+let scores = [50, 20, 70, 10, 40 , 1 ,2];
+scores.sort((a,b)=> a-b);
 console.log(scores)
 scores.sort((a,b)=> b-a);
 console.log(scores)
@@ -46,8 +47,10 @@ let array3 = array1.concat(array2);
 console.log(array3);
 //8. Splitting an Array
 let items = ["a", "b", "c", "d", "e"];
-let items2 = items.splice(0,3)
-console.log(items2+ " " +items)
+let newArray1 = items.splice(0,3)
+// let newArray2 = items.splice(0,3)
+console.log(newArray1)
+console.log(items)
 //9. Filtering Elements
 let numberss = [1, 5, 10, 15, 20, 25, 30];
 let  arrayy = []

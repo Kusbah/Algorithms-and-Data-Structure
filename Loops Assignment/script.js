@@ -11,7 +11,7 @@ for(var i = 1 ; i<=20;i++){
 }
 //Odd Numbers
 for(var i = 1 ; i<=20;i++){
-    if(i%2==1)
+    if(i%2!=0)
         console.log(i)
 }
 //Sum of Numbers
